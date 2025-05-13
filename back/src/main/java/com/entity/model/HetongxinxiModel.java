@@ -35,11 +35,7 @@ public class HetongxinxiModel  implements Serializable {
 	
 	private String fangwuleixing;
 		
-	/**
-	 * 小区
-	 */
-	
-	private String xiaoqu;
+
 		
 	/**
 	 * 月租价格
@@ -174,20 +170,7 @@ public class HetongxinxiModel  implements Serializable {
 	}
 				
 	
-	/**
-	 * 设置：小区
-	 */
-	 
-	public void setXiaoqu(String xiaoqu) {
-		this.xiaoqu = xiaoqu;
-	}
-	
-	/**
-	 * 获取：小区
-	 */
-	public String getXiaoqu() {
-		return xiaoqu;
-	}
+
 				
 	
 	/**

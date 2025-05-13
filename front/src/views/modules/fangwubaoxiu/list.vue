@@ -116,15 +116,7 @@
                        {{scope.row.fangwuleixing}}
                      </template>
                 </el-table-column>
-                	                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
-                    prop="xiaoqu"
-                    header-align="center"
-		    label="小区">
-		     <template slot-scope="scope">
-                       {{scope.row.xiaoqu}}
-                     </template>
-                </el-table-column>
-                	                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
+                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="baoxiumingcheng"
                     header-align="center"
 		    label="报修名称">

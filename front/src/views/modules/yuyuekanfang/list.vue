@@ -124,14 +124,7 @@
                        {{scope.row.fangwuzhuangtai}}
                      </template>
                 </el-table-column>
-                	                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
-                    prop="xiaoqu"
-                    header-align="center"
-		    label="小区">
-		     <template slot-scope="scope">
-                       {{scope.row.xiaoqu}}
-                     </template>
-                </el-table-column>
+                	    
                 	                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="yuezujiage"
                     header-align="center"

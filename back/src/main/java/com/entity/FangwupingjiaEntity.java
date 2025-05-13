@@ -69,11 +69,7 @@ public class FangwupingjiaEntity<T> implements Serializable {
 					
 	private String fangwuleixing;
 	
-	/**
-	 * 小区
-	 */
-					
-	private String xiaoqu;
+
 	
 	/**
 	 * 评分
@@ -180,18 +176,7 @@ public class FangwupingjiaEntity<T> implements Serializable {
 	public String getFangwuleixing() {
 		return fangwuleixing;
 	}
-	/**
-	 * 设置：小区
-	 */
-	public void setXiaoqu(String xiaoqu) {
-		this.xiaoqu = xiaoqu;
-	}
-	/**
-	 * 获取：小区
-	 */
-	public String getXiaoqu() {
-		return xiaoqu;
-	}
+
 	/**
 	 * 设置：评分
 	 */

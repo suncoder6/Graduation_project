@@ -9,12 +9,7 @@
                   <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2" suffix-icon="el-icon-search" v-model="searchForm.fangwumingcheng" placeholder="房屋名称" clearable></el-input>
                   <el-input v-if="contents.inputIcon == 0" v-model="searchForm.fangwumingcheng" placeholder="房屋名称" clearable></el-input>
                 </el-form-item>
-                                                                                                                                                                      <el-form-item :label="contents.inputTitle == 1 ? '小区' : ''">
-                  <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1" prefix-icon="el-icon-search" v-model="searchForm.xiaoqu" placeholder="小区" clearable></el-input>
-                  <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2" suffix-icon="el-icon-search" v-model="searchForm.xiaoqu" placeholder="小区" clearable></el-input>
-                  <el-input v-if="contents.inputIcon == 0" v-model="searchForm.xiaoqu" placeholder="小区" clearable></el-input>
-                </el-form-item>
-                                                                                                                                                                                                                              <el-form-item>
+                                                                                                                                                                                                            <el-form-item>
             <el-button v-if="contents.searchBtnIcon == 1 && contents.searchBtnIconPosition == 1" icon="el-icon-search" type="success" @click="search()">{{ contents.searchBtnFont == 1?'查询':'' }}</el-button>
             <el-button v-if="contents.searchBtnIcon == 1 && contents.searchBtnIconPosition == 2" type="success" @click="search()">{{ contents.searchBtnFont == 1?'查询':'' }}<i class="el-icon-search el-icon--right"/></el-button>
             <el-button v-if="contents.searchBtnIcon == 0" type="success" @click="search()">{{ contents.searchBtnFont == 1?'查询':'' }}</el-button>
@@ -125,15 +120,7 @@
                        {{scope.row.chaoxianglouceng}}
                      </template>
                 </el-table-column>
-                	                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
-                    prop="xiaoqu"
-                    header-align="center"
-		    label="小区">
-		     <template slot-scope="scope">
-                       {{scope.row.xiaoqu}}
-                     </template>
-                </el-table-column>
-                	                	                                    <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
+                                                <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="mianji"
                     header-align="center"
 		    label="面积">

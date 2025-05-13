@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="container loginIn" style="backgroundImage: url(http://codegen.caihongy.cn/20210128/ac0684f4d39c4b5ebf6694a20d747cd6.jpg)">
+    <div class="container loginIn" style="background-image: url(http://codegen.caihongy.cn/20210128/ac0684f4d39c4b5ebf6694a20d747cd6.jpg)">
 
-      <div :class="2 == 1 ? 'left' : 2 == 2 ? 'left center' : 'left right'" style="backgroundColor: rgba(206, 221, 207, 0.4)">
+      <div :class="2 == 1 ? 'left' : 2 == 2 ? 'left center' : 'left right'" style="background-color: rgba(206, 221, 207, 0.4)">
         <el-form class="login-form" label-position="left" :label-width="2 == 3 ? '56px' : '0px'">
-          <div class="title-container"><h3 class="title" style="color: rgba(31, 147, 255, 0.73)">房屋租赁系统登录</h3></div>
+          <div class="title-container"><h3 class="title" style="color: rgba(31, 147, 255, 0.73)">社区房屋租赁系统登录</h3></div>
           <el-form-item :label="2 == 3 ? '用户名' : ''" :class="'style'+2">
             <span v-if="2 != 3" class="svg-container" style="color:rgba(16, 17, 17, 1);line-height:44px"><svg-icon icon-class="user" /></span>
             <el-input placeholder="请输入用户名" name="username" type="text" v-model="rulesForm.username" />
@@ -13,7 +13,7 @@
             <span v-if="2 != 3" class="svg-container" style="color:rgba(16, 17, 17, 1);line-height:44px"><svg-icon icon-class="password" /></span>
             <el-input placeholder="请输入密码" name="password" type="password" v-model="rulesForm.password" />
           </el-form-item>
-          <el-form-item v-if="0 == '1'" class="code" :label="2 == 3 ? '验证码' : ''" :class="'style'+2">
+          <el-form-item v-if="1 == '1'" class="code" :label="2 == 3 ? '验证码' : ''" :class="'style'+2">
             <span v-if="2 != 3" class="svg-container" style="color:rgba(16, 17, 17, 1);line-height:44px"><svg-icon icon-class="code" /></span>
             <el-input placeholder="请输入验证码" name="code" type="text" v-model="rulesForm.code" />
             <div class="getCodeBt" @click="getRandCode(4)" style="height:44px;line-height:44px">
@@ -29,7 +29,7 @@
               :label="item.roleName"
             >{{item.roleName}}</el-radio>
           </el-form-item>
-          <el-button type="primary" @click="login()" class="loginInBt" style="padding:0;font-size:16px;border-radius:22px;height:44px;line-height:44px;width:100%;backgroundColor:rgba(64, 158, 255, 1); borderColor:rgba(64, 158, 255, 1); color:rgba(255, 255, 255, 1)">{{'1' == '1' ? '登录' : 'login'}}</el-button>
+          <el-button type="primary" @click="login()" class="loginInBt" style="padding:0;font-size:16px;border-radius:22px;height:44px;line-height:44px;width:100%;background-color:rgba(64, 158, 255, 1); border-color:rgba(64, 158, 255, 1); color:rgba(255, 255, 255, 1)">{{'1' == '1' ? '登录' : 'login'}}</el-button>
           <el-form-item class="setting">
                                                             <div style="color:rgba(153, 153, 153, 1)" class="register" @click="register('fangzhu')">注册房主</div>
                                                                                                                                                                                                                                                                                                                                                             <!-- <div style="color:rgba(153, 153, 153, 1)" class="reset">修改密码</div> -->
@@ -119,11 +119,11 @@ export default {
       for(let i in this.codes) {
         code += this.codes[i].num
       }
-	  if ('0' == '1' && !this.rulesForm.code) {
+	  if ('1' == '1' && !this.rulesForm.code) {
 	     this.$message.error("请输入验证码");
 	    return;
 	  }
-      if ('0' == '1' && this.rulesForm.code.toLowerCase() != code.toLowerCase()) {
+      if ('1' == '1' && this.rulesForm.code.toLowerCase() != code.toLowerCase()) {
          this.$message.error("验证码输入有误");
 		this.getRandCode()
         return;
@@ -262,6 +262,7 @@ export default {
         & ::v-deep input {
           background: transparent;
           border: 0px;
+          appearance: none;
           -webkit-appearance: none;
           padding: 0 15px 0 30px;
           color: #fff;

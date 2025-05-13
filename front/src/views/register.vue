@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="login-form" style="backgroundColor:rgba(183, 174, 174, 0.5);borderRadius:22px">
-        <h1 class="h1" style="color:#000;fontSize:28px;">房屋租赁系统注册</h1>
+        <h1 class="h1" style="color:#000;fontSize:28px;">社区房屋租赁系统注册</h1>
 		<el-form ref="rgsForm" class="rgs-form" :model="rgsForm" label-width="120px">
 															<!-- <div v-if="tableName=='yonghu'" class="input-group">
 			   <div class="label">用户名</div>

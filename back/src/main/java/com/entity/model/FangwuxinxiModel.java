@@ -59,11 +59,7 @@ public class FangwuxinxiModel  implements Serializable {
 	
 	private String fangwuzhuangtai;
 		
-	/**
-	 * 小区
-	 */
-	
-	private String xiaoqu;
+
 		
 	/**
 	 * 详细地址
@@ -211,21 +207,7 @@ public class FangwuxinxiModel  implements Serializable {
 		return fangwuzhuangtai;
 	}
 				
-	
-	/**
-	 * 设置：小区
-	 */
-	 
-	public void setXiaoqu(String xiaoqu) {
-		this.xiaoqu = xiaoqu;
-	}
-	
-	/**
-	 * 获取：小区
-	 */
-	public String getXiaoqu() {
-		return xiaoqu;
-	}
+
 				
 	
 	/**
