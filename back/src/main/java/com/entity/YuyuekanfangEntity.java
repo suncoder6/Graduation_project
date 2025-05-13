@@ -75,11 +75,7 @@ public class YuyuekanfangEntity<T> implements Serializable {
 					
 	private String fangwuzhuangtai;
 	
-	/**
-	 * 小区
-	 */
-					
-	private String xiaoqu;
+
 	
 	/**
 	 * 月租价格
@@ -228,18 +224,7 @@ public class YuyuekanfangEntity<T> implements Serializable {
 	public String getFangwuzhuangtai() {
 		return fangwuzhuangtai;
 	}
-	/**
-	 * 设置：小区
-	 */
-	public void setXiaoqu(String xiaoqu) {
-		this.xiaoqu = xiaoqu;
-	}
-	/**
-	 * 获取：小区
-	 */
-	public String getXiaoqu() {
-		return xiaoqu;
-	}
+
 	/**
 	 * 设置：月租价格
 	 */

@@ -47,11 +47,7 @@ public class WoyaodangfangzhuModel  implements Serializable {
 	
 	private String chaoxianglouceng;
 		
-	/**
-	 * 小区
-	 */
-	
-	private String xiaoqu;
+
 		
 	/**
 	 * 面积
@@ -168,20 +164,7 @@ public class WoyaodangfangzhuModel  implements Serializable {
 	}
 				
 	
-	/**
-	 * 设置：小区
-	 */
-	 
-	public void setXiaoqu(String xiaoqu) {
-		this.xiaoqu = xiaoqu;
-	}
-	
-	/**
-	 * 获取：小区
-	 */
-	public String getXiaoqu() {
-		return xiaoqu;
-	}
+
 				
 	
 	/**
